@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#128148;&#128148;&#128148;Hi~~ Clock Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=PT+Serif:wght@400;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/splitting.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.css" />
+    <link rel="stylesheet" href="../css/fullpage.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    <script src="../js/splitting.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/gsap/gsap.min.js"></script>
+    <script src="../js/gsap/CSSRulePlugin.min.js"></script>
+    <script src="../js/fullpage.min.js"></script>
+    <script src="../js/fullpage.extensions.min.js"></script>
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/particles.min.js"></script>
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="logo">CUBE</h1>
+    </header>
+    <main id="main">
+      <div class="scene">
+        <div class="cube">
+          <div class="face front">FRONT</div>
+          <div class="face back">BACK</div>
+          <div class="face top">TOP</div>
+          <div class="face bottom">BOTTOM</div>
+          <div class="face left">LEFT</div>
+          <div class="face right">RIGHT</div>
+        </div>
+      </div>
+      <div class="pagination">
+        <ul>
+          <li data-rotation-x="0" data-rotation-y="0" class="on">F</li>
+          <li data-rotation-x="0" data-rotation-y="-180">B</li>
+          <li data-rotation-x="-90" data-rotation-y="0">T</li>
+          <li data-rotation-x="90" data-rotation-y="0">B</li>
+          <li data-rotation-x="0" data-rotation-y="90">L</li>
+          <li data-rotation-x="0" data-rotation-y="-90">R</li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

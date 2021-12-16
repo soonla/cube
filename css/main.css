@@ -1,0 +1,27 @@
+#main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 100vh; }
+
+#main .scene { width: 400px; height: 400px; -webkit-perspective: 800px; perspective: 800px; }
+
+#main .scene .cube { width: 100%; height: 100%; position: relative; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transform: translateZ(-200px); transform: translateZ(-200px); }
+
+#main .scene .cube .face { position: absolute; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #fff; font-size: 24px; font-weight: 700; }
+
+#main .scene .cube .face.right { -webkit-transform: rotateY(90deg) translateZ(200px); transform: rotateY(90deg) translateZ(200px); background-color: #cf1515; }
+
+#main .scene .cube .face.left { -webkit-transform: rotateY(-90deg) translateZ(200px); transform: rotateY(-90deg) translateZ(200px); background-color: #d47800; }
+
+#main .scene .cube .face.top { -webkit-transform: rotateX(90deg) translateZ(200px); transform: rotateX(90deg) translateZ(200px); background-color: #0194b9; }
+
+#main .scene .cube .face.bottom { -webkit-transform: rotateX(-90deg) translateZ(200px); transform: rotateX(-90deg) translateZ(200px); background-color: #6f09e2; }
+
+#main .scene .cube .face.front { -webkit-transform: rotateY(0) translateZ(200px); transform: rotateY(0) translateZ(200px); background-color: #15c40f; }
+
+#main .scene .cube .face.back { -webkit-transform: rotateY(180deg) translateZ(200px); transform: rotateY(180deg) translateZ(200px); background-color: #00ffbf; }
+
+#main .pagination { position: absolute; bottom: 50px; width: 100%; }
+
+#main .pagination ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#main .pagination ul li { width: 30px; height: 30px; border: 2px solid #000; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #fff; margin: 0 2px; cursor: pointer; -webkit-transition: 0.25s ease; transition: 0.25s ease; }
+
+#main .pagination ul li.on { background-color: #000; color: #fff; }
